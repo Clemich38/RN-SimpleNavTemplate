@@ -11,7 +11,7 @@ import {
 // Theme
 import Theme from './../Theme'
 
-
+// Build a local Item list to be displayed as a list
 makeList = () => {
   var tab = [];
   for (let i = 0; i < 20; i++)
@@ -25,7 +25,6 @@ const list = makeList();
 export default class FirstPage extends React.Component {
 
   static navigationOptions = {
-    // Nav options can be defined as a function of the navigation prop:
     title: 'First Page',
   };
 

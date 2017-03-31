@@ -11,18 +11,21 @@ import {
 import Theme from './../Theme'
 
 export default class HomePage extends React.Component {
+
   static navigationOptions = {
     title: 'Simple Nav Template',
   };
+
   render() {
     const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
         <StatusBar 
-        backgroundColor={Theme.statusBarColor}
-        barStyle="light-content"
+          backgroundColor={Theme.statusBarColor}
+          barStyle="light-content"
         />
-        <Text style={styles.title}>Home Page!</Text>
+        <Text style={styles.title}>Home Page</Text>
         <Button
           onPress={() => navigate('First')}
           color={Theme.buttonColor}

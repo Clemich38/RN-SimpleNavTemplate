@@ -10,17 +10,21 @@ import {
 import Theme from './../Theme'
 
 export default class SecondPage extends React.Component {
+
   static navigationOptions = {
-    // Nav options can be defined as a function of the navigation prop:
     title: ({ state }) => `${state.params.option}`,
   };
+
   render() {
     // The screen's current route is passed in to `props.navigation.state`:
     const { params } = this.props.navigation.state;
     return (
       <View style={styles.container}>
         <Text style={styles.title}>
-          Second Page! with {params.option}
+          Second Page
+        </Text>
+        <Text style={styles.title}>
+          With {params.option}
         </Text>
       </View>
     );
