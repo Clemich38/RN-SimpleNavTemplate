@@ -4,6 +4,7 @@ import {
   View,
   Button,
   StyleSheet,
+  StatusBar
 } from 'react-native';
 
 // Theme
@@ -17,6 +18,10 @@ export default class HomePage extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
+        <StatusBar 
+        backgroundColor={Theme.statusBarColor}
+        barStyle="light-content"
+        />
         <Text style={styles.title}>Home Page!</Text>
         <Button
           onPress={() => navigate('First')}
